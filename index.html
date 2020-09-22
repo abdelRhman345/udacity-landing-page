@@ -11,36 +11,28 @@
       rel="stylesheet"
     />
     <!-- Load Styles -->
-    <!-- Load Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
-      <div class="container">
-        <nav class="navbar__menu navbar navbar-expand-lg navbar-light">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navigation starts as empty UL that will be populated with JS -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto" id="navbar__list"></ul>
+      <!-- Naviation Bar -->
+      <nav class="navbar__menu">
+        <!-- Navbar Nav -->
+        <div class="col">
+          <!-- Navbar Icon -->
+          <div class="navbar-icon" id="navbar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </nav>
-      </div>
+        </div>
+        <div class="collapse col" id="collapse">
+          <!-- Navbar -->
+          <ul class="navbar-nav" id="navbar__list"></ul>
+        </div>
+      </nav>
     </header>
     <main>
       <header class="main__hero">
