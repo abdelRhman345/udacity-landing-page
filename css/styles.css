@@ -132,7 +132,7 @@ section {
   text-align: left;
   padding: 0;
 }
-.navbar__menu .navbar-nav .nav-item {
+.navbar__menu .navbar-nav li {
   padding: 6px;
   display: inline-block;
 }
@@ -145,28 +145,6 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.2s;
-}
-/* navbar__menu Brand */
-.navbar__menu .navbar-brand {
-  text-align: left;
-  margin-top: 3px;
-}
-.navbar__menu .navbar-brand .brand {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-}
-/* navbar__menu Icon Search */
-.navbar__menu form {
-  display: inline-block;
-}
-.navbar__menu form .btn {
-  background-color: transparent;
-  border: none;
-  color: #fff;
 }
 
 /* Media */
@@ -181,15 +159,12 @@ section {
   .navbar__menu .navbar-nav {
     padding: 15px 0;
   }
-  .navbar__menu .navbar-nav .nav-item {
+  .navbar__menu .navbar-nav li {
     display: block;
+    padding: 6px 0;
   }
   .navbar__menu .navbar-nav .nav-link {
     font-size: 12px;
-  }
-  .navbar__menu form {
-    display: block;
-    padding-left: 10px;
   }
 }
 
@@ -204,15 +179,12 @@ section {
   .navbar__menu .navbar-nav {
     padding: 15px 0;
   }
-  .navbar__menu .navbar-nav .nav-item {
+  .navbar__menu .navbar-nav li {
     display: block;
+    padding: 6px 0;
   }
   .navbar__menu .navbar-nav .nav-link {
     font-size: 12px;
-  }
-  .navbar__menu form {
-    display: block;
-    padding-left: 10px;
   }
 }
 
@@ -227,16 +199,13 @@ section {
   .navbar__menu .navbar-nav {
     padding: 15px 0;
   }
-  .navbar__menu .navbar-nav .nav-item {
+  .navbar__menu .navbar-nav li {
     display: block;
     text-align: left;
+    padding: 6px 0;
   }
   .navbar__menu .navbar-nav .nav-link {
     font-size: 12px;
-  }
-  .navbar__menu form {
-    display: block;
-    padding-left: 10px;
   }
 }
 
@@ -245,7 +214,7 @@ section {
   .navbar__menu .navbar-nav {
     padding: 0;
   }
-  .navbar__menu .navbar-nav .nav-item {
+  .navbar__menu .navbar-nav li {
     padding: 6px 0;
   }
   .navbar__menu .navbar-nav .nav-link {
