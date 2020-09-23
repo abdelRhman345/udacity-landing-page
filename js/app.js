@@ -40,13 +40,6 @@ for (let i = 1; i <= 4; i++) {
   myCustomNav.appendChild(newList);
 }
 
-// $(function () {
-//   "use strict";
-
-//   $('.navbar-icon').click(function () {
-//       $('.navbar .collapse').slideToggle();
-//   });
-// });
 const myNav = document.getElementById("navbar-icon");
 
 myNav.addEventListener("click", function () {
@@ -151,3 +144,32 @@ function clickHandler(e) {
   });
 }
 // Set sections as active
+let sectionOne = document.querySelector("#section1"),
+  sectionTwo = document.querySelector("#section2"),
+  sectionThree = document.querySelector("#section3"),
+  sectionFour = document.querySelector("#section4");
+
+window.addEventListener("scroll", function () {
+  const windo = window.pageYOffset + 200,
+  if (sectionOne.offsetTop <= windo && sectionTwo.offsetTop > windo) {
+    sectionOne.setAttribute("class", "your-active-class");
+    sectionTwo.removeAttribute("class", "your-active-class");
+    sectionThree.removeAttribute("class", "your-active-class");
+    sectionFour.removeAttribute("class", "your-active-class");
+  } else if (sectionTwo.offsetTop <= windo && sectionThree.offsetTop > windo) {
+    sectionTwo.setAttribute("class", "your-active-class");
+    sectionOne.removeAttribute("class", "your-active-class");
+    sectionThree.removeAttribute("class", "your-active-class");
+    sectionFour.removeAttribute("class", "your-active-class");
+  } else if (sectionThree.offsetTop <= windo && sectionFour.offsetTop > windo) {
+    sectionThree.setAttribute("class", "your-active-class");
+    sectionTwo.removeAttribute("class", "your-active-class");
+    sectionOne.removeAttribute("class", "your-active-class");
+    sectionFour.removeAttribute("class", "your-active-class");
+  } else if (sectionFour.offsetTop <= windo) {
+    sectionFour.setAttribute("class", "your-active-class");
+    sectionTwo.removeAttribute("class", "your-active-class");
+    sectionThree.removeAttribute("class", "your-active-class");
+    sectionOne.removeAttribute("class", "your-active-class");
+  }
+});
