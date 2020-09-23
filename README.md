@@ -7,4 +7,4 @@ $ git clone https://github.com/abdelRhman345/udacity-landing-page
 ```
 
 ## Usage
-this contains a some of function **Pure Js**.
+this contains a some of the function **Pure Js**.
