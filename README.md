@@ -3,10 +3,6 @@
 ## Dependencies
 I depended on my self and learned it on Udacity.
 
-Clone the Github repository.
-```
-$ git clone https://github.com/abdelRhman345/udacity-landing-page
-```
 
 ## References that you have used
 - Stackoverflow
